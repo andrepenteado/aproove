@@ -36,7 +36,7 @@ metadata:
   namespace: aproove
   labels: &selector
     apcode.com.br/app: aproove
-    apcode.com.br/module: aproove
+    apcode.com.br/module: roove
     apcode.com.br/version: 2.0.0
     apcode.com.br/env: prod
 spec:
@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
         - name: *name
-          image: ghcr.io/andrepenteado/aproove/aproove
+          image: ghcr.io/andrepenteado/aproove/roove
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -65,7 +65,7 @@ metadata:
   namespace: aproove
   labels: &selector
     apcode.com.br/app: aproove
-    apcode.com.br/module: aproove
+    apcode.com.br/module: roove
     apcode.com.br/version: 2.0.0
     apcode.com.br/env: prod
 spec:
@@ -88,7 +88,7 @@ spec:
   tls:
     - secretName: certificado-ssl
   rules:
-    - host: aproove.apcode.com.br
+    - host: roove.apcode.com.br
       http:
         paths:
           - pathType: Prefix
