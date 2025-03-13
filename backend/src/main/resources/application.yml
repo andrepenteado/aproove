@@ -27,8 +27,8 @@ spring:
         registration:
           "[com.github.andrepenteado.roove]":
             provider: com.github.andrepenteado.sso.portal
-            client-name: Módulo de Controle
-            client-id: PRODUCAO-controle
+            client-name: AProove
+            client-id: PRODUCAO-roove
             client-secret: ce777ff4-2427-4769-aa88-68850c82d2b0
             authorization-grant-type: authorization_code
             scope: openid
